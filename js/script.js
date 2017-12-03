@@ -1,12 +1,12 @@
 
-var buttonValue = document.getElementById("button");
-var listValue = document.getElementById("list");
+var buttonElement = document.getElementById("button");
+var listElement = document.getElementById("list");
 
-buttonValue.addEventListener("click", function(){
+buttonElement.addEventListener("click", function(){
     var newElement = document.createElement("li");
     var listLength = document.getElementsByTagName("li").length;
     newElement.innerHTML = "item " + listLength;
     console.log(newElement);
-    listValue.appendChild(newElement);
+    listElement.appendChild(newElement);
 });
 
